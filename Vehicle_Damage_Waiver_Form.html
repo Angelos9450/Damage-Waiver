@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vehicle Damage Waiver</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 700px; margin: auto; padding: 20px; }
+    label { display: block; margin-top: 15px; font-weight: bold; }
+    input, textarea { width: 100%; padding: 8px; margin-top: 5px; }
+    .section { margin-bottom: 25px; }
+    .signature-line { border-top: 1px solid #000; height: 40px; margin-top: 10px; }
+    button { padding: 10px 20px; font-size: 16px; margin-top: 20px; }
+  </style>
+</head>
+<body>
+
+  <h2>Angelo's Towing - Vehicle Damage Waiver</h2>
+
+  <form action="https://formsubmit.co/brandon@angelostowing.com" method="POST" enctype="multipart/form-data">
+
+    <div class="section">
+      <label for="date">Date</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="svo">SVO #</label>
+      <input type="text" id="svo" name="svo" required>
+
+      <label for="vehicle">Vehicle Year, Make & Model</label>
+      <input type="text" id="vehicle" name="vehicle" required>
+    </div>
+
+    <div class="section">
+      <label for="description">Pre-Existing Damage Description</label>
+      <textarea id="description" name="description" rows="5" required></textarea>
+
+      <label for="photo">Upload Photos of Damage</label>
+      <input type="file" id="photo" name="photo" accept="image/*" multiple>
+    </div>
+
+    <div class="section">
+      <p>
+        I acknowledge the pre-existing condition and damage described above, which the technician noted prior to service. I understand I am responsible for my vehicle’s condition and will not hold Angelo’s Towing liable for pre-existing damage.
+      </p>
+
+      <label for="memberName">Member Name (Print)</label>
+      <input type="text" id="memberName" name="memberName" required>
+
+      <label for="memberSignature">Member Signature (Typed Name)</label>
+      <input type="text" id="memberSignature" name="memberSignature" required>
+
+      <label for="technicianName">Technician Name (Print)</label>
+      <input type="text" id="technicianName" name="technicianName" required>
+
+      <label for="technicianSignature">Technician Signature (Typed Name)</label>
+      <input type="text" id="technicianSignature" name="technicianSignature" required>
+    </div>
+
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://thankyou-page.com">
+
+    <button type="submit">Submit Waiver</button>
+
+  </form>
+
+</body>
+</html>
