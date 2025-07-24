@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vehicle Damage Waiver - Angelo's Towing</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: auto;
+      max-width: 800px;
+      padding: 20px;
+      background: #f8f9fa;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .logo {
+      display: block;
+      margin: 0 auto 20px;
+      max-width: 200px;
+    }
+    label {
+      font-weight: bold;
+      margin-top: 15px;
+      display: block;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+    }
+    textarea {
+      resize: vertical;
+    }
+    .form-section {
+      margin-bottom: 20px;
+      padding: 10px;
+      background: #ffffff;
+      border-radius: 6px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.05);
+    }
+    button {
+      padding: 12px 24px;
+      font-size: 16px;
+      background: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="https://angelos9450.github.io/Damage-Waiver/logo.png" alt="Angelo's Towing Logo" class="logo">
+
+  <h2>Vehicle Damage Waiver & Liability Release</h2>
+
+  <form action="https://formsubmit.co/brandon@angelostowing.com" method="POST" enctype="multipart/form-data">
+
+    <div class="form-section">
+      <label for="date">Date</label>
+      <input type="date" name="date" id="date" required>
+
+      <label for="svo">SVO #</label>
+      <input type="text" name="svo" id="svo" required>
+
+      <label for="vehicle">Vehicle Year, Make & Model</label>
+      <input type="text" name="vehicle" id="vehicle" required>
+    </div>
+
+    <div class="form-section">
+      <label for="diagram">Upload Image of Pre-Service Diagram (Optional)</label>
+      <input type="file" name="diagram" id="diagram" accept="image/*">
+
+      <label for="damage">Details of Pre-Existing Condition or Damage</label>
+      <textarea name="damage" id="damage" rows="5" required></textarea>
+    </div>
+
+    <div class="form-section">
+      <p>
+        I hereby acknowledge the pre-existing condition and damage described above, which the technician noted prior to service. I understand I am responsible for my vehicle’s condition and will not hold Angelo’s Towing or its drivers responsible for pre-existing conditions.
+      </p>
+
+      <label for="member_name">Member Name (Printed)</label>
+      <input type="text" name="member_name" id="member_name" required>
+
+      <label for="member_signature">Member Signature (Typed Name)</label>
+      <input type="text" name="member_signature" id="member_signature" required>
+
+      <label for="tech_name">Technician Name</label>
+      <input type="text" name="tech_name" id="tech_name" required>
+
+      <label for="tech_signature">Technician Signature (Typed Name)</label>
+      <input type="text" name="tech_signature" id="tech_signature" required>
+    </div>
+
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://angelos9450.github.io/Damage-Waiver/thankyou.html">
+
+    <button type="submit">Submit Waiver</button>
+  </form>
+
+</body>
+</html>
